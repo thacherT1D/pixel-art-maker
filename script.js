@@ -3,12 +3,13 @@ var wrapper = document.createElement('section');
 body.appendChild(wrapper);
 // wrapper.style.width = '560px';
 // wrapper.style.width = '450px';
+var heightWidth = '11.1%';
 
-for(var i = 0; i < 4; i++){
+for(var i = 0; i < 3; i++){
   for(var j = 0; j < 16; j++){
     var squares = document.createElement('div');
-    squares.style.height = '11.1%';
-    squares.style.width = '11.1%';
+    squares.style.height = heightWidth;
+    squares.style.width = heightWidth;
     // squares.style.float = 'left';
     squares.style.paddingTop = '10%';
     squares.style.margin = '0% 0.5% 0px 0px';
@@ -21,13 +22,13 @@ document.getElementsByTagName('section')[0].appendChild(squares);
 var palette = document.createElement('section');
 body.appendChild(palette);
 
-var colors = ['red', 'blue', 'purple','green','yellow','pink','orange','grey']
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple','pink','grey']
 
 for(var i = 0; i < 1; i++){
   for(var j = 0; j < 8; j++){
     var paletteSquares = document.createElement('div');
-    paletteSquares.style.height = '11.1%';
-    paletteSquares.style.width = '11.1%';
+    paletteSquares.style.height = heightWidth;
+    paletteSquares.style.width = heightWidth;
     // squares.style.float = 'left';
     paletteSquares.style.paddingTop = '10%';
     paletteSquares.style.margin = '2% 0.5% 0px 0px';
