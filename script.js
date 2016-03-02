@@ -1,8 +1,6 @@
 var body = document.getElementsByTagName('body')[0];
 var wrapper = document.createElement('section');
 body.appendChild(wrapper);
-// wrapper.style.width = '560px';
-// wrapper.style.width = '450px';
 var heightWidth = '10%';
 
 for(var i = 0; i < 8; i++){
@@ -18,7 +16,7 @@ for(var i = 0; i < 8; i++){
     squares.style.margin = '0.5% 0.5% 0px 0px';
     // squares.style.display = 'inline-block';
     squares.style.border = '1px solid black';
-    squares.style.boxSizing = 'border-box'
+    squares.style.boxSizing = 'border-box';
     row.appendChild(squares);
 // document.getElementsByTagName('section')[0].appendChild(squares);
  }
@@ -45,27 +43,14 @@ for(var i = 0; i < 1; i++){
     document.getElementsByTagName('section')[1].appendChild(paletteSquares);
  }
 }
-
 var paletteWrapper = document.getElementsByTagName('section')[1];
-
-
-//PaletteColors
-// var lastSquare = document.getElementsByTagName('div');
-// lastSquare[lastSquare.length-1].style.backgroundColor = 'blue';
-// lastSquare[lastSquare.length-2].style.backgroundColor = 'purple';
-// lastSquare[lastSquare.length-3].style.backgroundColor = 'red';
-
-//Do Stuff
 
 function targetingColor(someEvent) {
   saveColor = someEvent.target.style.backgroundColor;
 }
-
-
 var clickSquares = document.querySelector('section');
 var saveColor = 'red';
 function targeting (event) {
   event.target.style.background = saveColor;
-  // console.log(event.target.style.background);
 }
 clickSquares.addEventListener('click',targeting);
